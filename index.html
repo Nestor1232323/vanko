@@ -1,1 +1,289 @@
-test
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://vanko.ct.ws/icons/vankologonotext.png" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Vanko</title>
+<style>
+/* Основные настройки */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://supportservice.su/pictures/wallpapers/fastvista.ru_wallpapers24.jpg') no-repeat center center fixed;
+  color: #333;
+  background-size: cover;
+  display: -ms-flexbox; /* IE11 */
+  display: flex;
+  -ms-flex-direction: column; /* IE11 */
+  flex-direction: column;
+}
+
+/* Заголовок */
+header {
+  background: #4a90e2; /* fallback */
+  background: -ms-linear-gradient(top, #4a90e2, #2c5a9f); /* IE11 */
+  background: linear-gradient(to bottom, #4a90e2, #2c5a9f);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+header p {
+  margin-top: 5px;
+  font-size: 1.1em;
+}
+
+nav {
+  display: -ms-flexbox; /* IE11 */
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 20px 10px 0;
+  background: url('/icons/navbar.png') no-repeat center center;
+  background-size: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  height: 35px;
+  backdrop-filter: blur(10px); /* Apply a blur to the content behind */
+}
+
+.nav-left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+body {
+    overflow-x: hidden;       /* скрывает горизонтальный скроллбар */
+    overflow-y: auto;         /* вертикальный оставляем */
+    -ms-overflow-style: scrollbar; /* IE11 оставляет вертикальный скроллбар */
+}
+
+.logo {
+  max-height: 40px;
+  width: auto;
+  margin-top: 0px;
+  margin-left: 5px;
+  display: block;
+}
+
+.nav-right {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.nav-title {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+
+
+h2 {
+  color: #000;
+  border-bottom: 2px solid #0000000d;
+  padding-bottom: 5px;
+}
+h1 {
+  color: #000;
+}
+
+.versions {
+  display: -ms-flexbox; /* IE11 fallback для grid */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.version-card {
+  background: #E3EEFB; /* fallback */
+  background: -ms-linear-gradient(top, #E3EEFB, #FBFCFC); /* IE10-11 */
+  background: linear-gradient(to bottom, #E3EEFB, #FBFCFC);
+  padding: 15px;
+  border: 1px solid #BEC7D1;
+  -ms-flex: 1 0 250px; /* IE11 fallback */
+  flex: 1 0 250px;
+  margin: 10px;
+}
+
+.version-card h3 {
+  margin-top: 0;
+  color: #1a3d7c;
+}
+a.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  background: #4a90e2;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+a.download-link:hover {
+  background: #2c5a9f;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.previous-text {
+  color: black; /* IE11 не поддерживает background-clip: text */
+}
+
+footer {
+  width: 100%;
+  background: #E3EEFB;
+  background: -ms-linear-gradient(top, #E3EEFB, #FBFCFC);
+  background: linear-gradient(to bottom, #E3EEFB, #FBFCFC);
+  padding: 10px;
+  border: 1px solid #BEC7D1;
+  color: black;
+  text-align: center;
+  position: relative;
+  margin-top: auto; /* Это заставит footer прижиматься вниз */
+  -ms-flex-negative: 0; /* Для IE11 */
+}
+
+/* Обновляем стили для body и html */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  margin: 100px auto 0 auto; /* Авто-отступы по бокам для центровки */
+  -ms-flex: 1 0 auto;
+  /* Для IE11 центровка */
+  -ms-flex-item-align: center; 
+  align-self: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+</style>
+
+</head>
+<body>
+
+
+<nav>
+  <div class="nav-left">
+    <img src="https://vanko.ct.ws/icons/vankologo.png" alt="LOGO" class="logo">
+  </div>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="#">Главная</a>
+      <a href="https://vanko.ct.ws/poisk">Поиск</a>
+      <a href="https://t.me/shindows_chat">Чат</a>
+      <a href="https://vanko.free.nf/index.php/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Vanko Wiki</a>
+      <a href="https://drive.google.com/drive/u/0/folders/1s_5KaM46-IUhAuSTjEc7zcLvdvak85Nx">Скачать</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main>
+<h1>
+  <img src="/icons/vankologonotext.png" alt="Vanko logo" style="height: 40px; vertical-align: middle;">
+  Vanko Corporation
+</h1>
+    <section id="about">
+      <h2>Кто мы?</h2>
+      <p>Vanko Corporation – государственная корпорация виртуальной страны Шиндовская Республика. Ориентирован на выпуск всего в стране. Но большая часть дохода приходит с сборок Shindows SG.</p>
+    </section>
+
+    <section id="versions">
+      <h2>Основные продукты</h2>
+      <div class="versions">
+        <div class="version-card">
+          <h3>Shindows SG</h3>
+          <p>Shindows SG - пародия на «<s>говно</s>сборку» во Flash Windows RG а также пародия на Windows </p>
+        </div>
+        <div class="version-card">
+          <h3>VOS</h3>
+          <p>VOS - пародия на iOS 6, 7, являеться отдельной от Shindows SG операционной системой.</p>
+        </div>
+        <div class="version-card">
+            <h3>Приключения в Мухосранске</h3>
+          <p>Мультфильм, пародия на Гравити Фолз, являеться отечественным аналогом на Гравити Фолс.</p>
+        </div>
+                  <div class="version-card">
+            <h3>ShindoServak</h3>
+          <p>Отечественный ответ NGINX и APACHE а также аналог <code>python3 -m http.server 8000</code>.</p>
+        </div>
+          <div class="version-card">
+            <h3>Ноутбуки, пк, девайсы</h3>
+          <p>Vanko, в том числе и делает устройства, но пока они не вышли в реальный мир, по причине отсуствия денег.</p>
+        </div>
+                    <div class="version-card">
+            <h3>Vanko Поиск</h3>
+          <p>Vanko, сделала свой поисковик для поиска сайтов в сети Козлонет. Вот ссылка: <a href="https://vanko.ct.ws/poisk">Посмотреть</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="games">
+      <h2>Новости</h2>
+      <ul>
+        <p>У Vanko 100 подписчиков 🎉</p>
+        <p class="previous-text">Недавно вышла Shindows SG Plitka Update 2 KB4625.</p>
+      </ul>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <s>&copy;</s> Vanko 2023-2025 | Все права украдены
+  </footer>
+</body>
+</html>
